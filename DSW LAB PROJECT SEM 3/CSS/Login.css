@@ -1,0 +1,290 @@
+:root {
+    --home-bg-color: #f2f3ee;
+    --menu-bg-color: #cbcbc2;
+    --silde-btn-border: #808080;
+    --slide-btn-bg: #ddf2db;
+    --slide-btn-hoverbg: #f1fff1;
+    --alpha-green: rgba(33, 96, 47, 0.51);
+    --icon-hover-color: #344a39;
+    --icon-hover-bg: #709680;
+    --text-color: #616161;
+    --border-color: #709680;
+    --heading-color: #344a39;
+    --box-shadow-color: #b5b5ac;
+    --lightest-green: #86a58d;
+    --light-green: #9ab09a;
+    --dark-green: rgba(52, 74, 57, 0.86);
+    --box-shadow: 0px 0px 3px 5px var(--box-shadow-color);
+    --border-radius: 60px 5px;
+    --fade-green: rgba(57, 87, 64, 0.55);
+  }
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#lgn{
+    font-size:30px;
+    margin-bottom:-8px;
+    color:var(--border-color);
+}
+#user{
+  color:var(--border-color);
+  margin-bottom:10%;
+  font-size:18px;
+}
+.rad{
+    margin:0;
+    padding:0;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    color: #acaabe;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:var(--border-color);
+    font-size: 14px;
+    overflow: hidden;
+  }
+  .wrap {
+    perspective-origin: 50% 50%;
+  }
+  .page {
+    margin: 3%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.4vw;
+  }
+  .page h2 {
+    font-weight: bold;
+    font-size: 6.5vw;
+    font-weight: 900;
+    font-style: italic;
+    color: #dad8ec;
+  }
+  .svg {
+    stroke: #7ceaa4;
+    position: absolute;
+    bottom: -100vh;
+    transform-style: preserve-3d;
+  }
+  .svg:nth-child(1) {
+    left: 58%;
+    animation: raise1 9s linear infinite;
+    animation-delay: -2s;
+    transform: scale(-0.3) rotate(29deg);
+    z-index: -6;
+    filter: blur(-5px);
+  }
+  @keyframes raise1 {
+    to {
+      bottom: 150vh;
+      transform: scale(-0.3) rotate(190deg);
+    }
+  }
+  .svg:nth-child(2) {
+    left: 93%;
+    animation: raise2 17s linear infinite;
+    animation-delay: 0s;
+    transform: scale(0) rotate(140deg);
+    z-index: -5;
+    filter: blur(-4px);
+  }
+  @keyframes raise2 {
+    to {
+      bottom: 150vh;
+      transform: scale(0) rotate(62deg);
+    }
+  }
+  .svg:nth-child(3) {
+    left: 0%;
+    animation: raise3 10s linear infinite;
+    animation-delay: -4s;
+    transform: scale(0.3) rotate(179deg);
+    z-index: -4;
+    filter: blur(-3px);
+  }
+  @keyframes raise3 {
+    to {
+      bottom: 150vh;
+      transform: scale(0.3) rotate(261deg);
+    }
+  }
+  .svg:nth-child(4) {
+    left: 2%;
+    animation: raise4 13s linear infinite;
+    animation-delay: -4s;
+    transform: scale(0.6) rotate(191deg);
+    z-index: -3;
+    filter: blur(-2px);
+  }
+  @keyframes raise4 {
+    to {
+      bottom: 150vh;
+      transform: scale(0.6) rotate(53deg);
+    }
+  }
+  .svg:nth-child(5) {
+    left: 39%;
+    animation: raise5 9s linear infinite;
+    animation-delay: -3s;
+    transform: scale(0.9) rotate(52deg);
+    z-index: -2;
+    filter: blur(-1px);
+  }
+  @keyframes raise5 {
+    to {
+      bottom: 150vh;
+      transform: scale(0.9) rotate(246deg);
+    }
+  }
+  .svg:nth-child(6) {
+    left: 85%;
+    animation: raise6 13s linear infinite;
+    animation-delay: -2s;
+    transform: scale(1.2) rotate(58deg);
+    z-index: -1;
+    filter: blur(0px);
+  }
+  @keyframes raise6 {
+    to {
+      bottom: 150vh;
+      transform: scale(1.2) rotate(323deg);
+    }
+  }
+  .svg:nth-child(7) {
+    left: -1%;
+    animation: raise7 15s linear infinite;
+    animation-delay: -1s;
+    transform: scale(1.5) rotate(34deg);
+    z-index: 0;
+    filter: blur(1px);
+  }
+  @keyframes raise7 {
+    to {
+      bottom: 150vh;
+      transform: scale(1.5) rotate(290deg);
+    }
+  }
+  .svg:nth-child(8) {
+    left: 83%;
+    animation: raise8 11s linear infinite;
+    animation-delay: -3s;
+    transform: scale(1.8) rotate(251deg);
+    z-index: 1;
+    filter: blur(2px);
+  }
+  @keyframes raise8 {
+    to {
+      bottom: 150vh;
+      transform: scale(1.8) rotate(236deg);
+    }
+  }
+  .svg:nth-child(9) {
+    left: -15%;
+    animation: raise9 19s linear infinite;
+    animation-delay: -3s;
+    transform: scale(2.1) rotate(269deg);
+    z-index: 2;
+    filter: blur(3px);
+  }
+  @keyframes raise9 {
+    to {
+      bottom: 150vh;
+      transform: scale(2.1) rotate(41deg);
+    }
+  }
+  .svg:nth-child(10) {
+    left: 49%;
+    animation: raise10 17s linear infinite;
+    animation-delay: -4s;
+    transform: scale(2.4) rotate(342deg);
+    z-index: 3;
+    filter: blur(4px);
+  }
+  @keyframes raise10 {
+    to {
+      bottom: 150vh;
+      transform: scale(2.4) rotate(215deg);
+    }
+  }
+  

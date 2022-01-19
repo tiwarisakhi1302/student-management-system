@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Edit Student Personal Info CSS/edit_Semester.css">
+    <title>Edit Student Semester</title>
+    <script>
+        function validate(){
+          var sem= document.frm.sem;
+          if(sem.value.length==0){
+            alert("sem Number Required");
+            return false;
+            sem.focus();
+          }
+          if(sem.value<1 || sem.value>8){
+            alert("Enter valid Semester");
+            return false;
+            sem.focus();
+          }
+          confirm("Press Ok to confirm");
+        }
+      </script>
+</head>
+<body>
+<div id="heading">
+<h1 id="h">Edit Student Semester</h1>
+</div>
+<div="sm">
+    <form name="frm" action="../../PHP/Edit Student Persoanl Info PHP/edit_semester.php" method="POST" onsubmit='return validate()'>
+      <ul class="form-style-1">
+        <li>
+            <label>Enter New Semester:<span class="required">*</span></label>
+            <input type="number" name="sem" value="" style="width: 100%">
+        </li><br>
+        <li>
+            <center><input type="submit" value="Submit"style="margin-right:15px"/><input type="button" value="Back" onclick="location.href='../../PHP/edit_stu_per_info_menu.php'";/></center>
+        </li>
+    </ul>
+    </form>
+    </div>
+    <div id="lower">
+        <h3 id="h">CGPA : </h3>
+    </div>
+</body>
+</html>
